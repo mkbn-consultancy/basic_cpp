@@ -4,11 +4,11 @@ void foo(int x) {
     std::cout << "foo(int)\n"; 
 } 
 
-void foo(double x) { 
-    std::cout << "foo(double)\n"; 
-} 
+// void foo(double x) { 
+//     std::cout << "foo(double)\n"; 
+// } 
 
-template<typename T> void foo(T* x) { 
+template<typename T> void foo(T x) { 
     std::cout << "foo<" << typeid(T).name() << ">(T*)\n"; 
 } 
 
@@ -18,4 +18,3 @@ int main() {
     foo("abcdef");
     return 0;
 }
-
